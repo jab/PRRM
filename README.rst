@@ -71,13 +71,13 @@ an HTTP response header such as:
 
 .. code::
 
-   X-Reader-Mode: true
+   Reader-Mode: true
 
 or equivalently:
 
 .. code:: html
 
-   <meta http-equiv="X-Reader-Mode" content="true">
+   <meta http-equiv="Reader-Mode" content="true">
 
 (See [#fn-api-prior-art]_ for prior art.)
 
@@ -278,8 +278,7 @@ Risks
    Implementation appears to be doable in a handful of lines of code
    whose maintenance burden is in turn expected to be low.
 
-   Browsers and extensions should ignore
-   ``X-`` headers
+   Browsers and extensions should ignore HTTP headers
    (and corresponding ``<meta http-equiv>`` tags)
    they don't recognize,
    so there is low risk of breaking clients that predate this feature.
@@ -422,11 +421,11 @@ References
 
    .. code::
 
-      X-Reader-Mode: connection.effectiveType < 3g
+      Reader-Mode: connection.effectiveType < 3g
 
    (Inspired by the
    `navigator.connection API
-   <https://developer.mozilla.org/en-US/docs/Web/API/Navigator/connection>`_.)
+   <https://developer.mozilla.org/en-US/docs/Web/API/Navigator/connection>`__.)
 
    Pending evidence to the contrary,
    this proposal recommends only implementing support for ``(true|auto|false)``
