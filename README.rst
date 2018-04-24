@@ -272,7 +272,7 @@ Risks
 -----
 
 #. Technical risk of implementing basic support,
-   i.e. just ``true`` or ``true|false|auto)``,
+   i.e. just ``true`` or ``(true|false|auto)``,
    is expected to be low.
 
    Implementation appears to be doable in a handful of lines of code
@@ -280,7 +280,7 @@ Risks
 
    Browsers and extensions should ignore HTTP headers
    (and corresponding ``<meta http-equiv>`` tags)
-   they don't recognize,
+   that they don't recognize,
    so there is low risk of breaking clients that predate this feature.
 
 #. There is a risk that readers will prefer to deactivate Reader Mode
@@ -380,6 +380,13 @@ Inspiration
    [#fn-meownica-web-fonts]_
    and many others).
 
+#. See:
+
+   - `motherfuckingwebsite.com <http://motherfuckingwebsite.com>`__
+   - `bettermotherfuckingwebsite.com <http://bettermotherfuckingwebsite.com>`__
+   - `txti.es <http://txti.es>`__
+
+
 
 References
 ----------
@@ -436,15 +443,16 @@ References
 .. [#fn-cws-reader-mode] https://chrome.google.com/webstore/search/reader%20mode?_category=extensions
 .. [#fn-quora-auto-reader-mode] https://www.quora.com/Is-there-any-Android-web-browser-that-will-load-a-webpage-directly-in-reading-mode-like-Pocket-app
 
-.. [#fn-manual-activation] At least one browser (Safari) allows
-   activating Reader Mode for an entire site,
+.. [#fn-manual-activation] At least one browser, Safari,
+   allows activating Reader Mode for an entire site
+   or by default for all sites when possible,
    so users don't have to activate it manually as often,
-   but this feature is even less discoverable
+   but these features are even less discoverable
    than the basic Reader Mode feature:
-   Safari buries per-site Reader Mode in a hidden menu
+   Safari buries them in a hidden menu
    that is only revealed after long-pressing on the
    "activate Reader Mode" button.
-   So even fewer users know about per-site Reader Mode.
+   So even fewer users know about these.
 
 .. [#fn-native-awareness] Its availability is only indicated
    by a small, unlabeled icon in the address bar
